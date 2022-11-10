@@ -1,0 +1,157 @@
+#root {
+    --accent: #F16B16;
+    --button_primary_background: #1850AC;
+    --button_primary_foreground: #EDEDF4;
+}
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.vkuiModalPage__in {
+    width: 516px !important;
+}
+
+.in_msg>* {
+    background: var(--vkui--color_background_positive);
+    border-radius: 12px;
+    padding: 2px 12px;
+}
+
+.out_msg>* {
+    background: var(--destructive);
+    border-radius: 12px;
+    padding: 2px 12px;
+}
+
+.in_msg span,
+.out_msg span {
+    color: #fff
+}
+
+.logo-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: var(--accent);
+    margin-left: 16px
+}
+
+.logo {
+    /* height: 50px; */
+}
+
+.div_qr::after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: calc(50% - 0px);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    /* background-image: url(https://biton.pw/static/biton/img/logo.png?1); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: #fff; */
+    border-radius: 0px;
+}
+
+
+/* начало новых стиелй*/
+
+html,
+* {
+    /* font-family: 'Ruberoid'!important; */
+}
+
+.vkuiGroup--card>.vkuiGroup__inner {
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+
+
+/* .vkuiPanelHeader--ios::before,
+.vkuiPanelHeader--ios .vkuiPanelHeader__in {
+    height: 104px!important;
+} */
+
+.vkuiButton {
+    padding: 10px 15px !important;
+    font-size: 17px !important;
+    border-radius: 12px !important;
+}
+
+.vkuiPanelHeader::before,
+.vkuiPanelHeader .vkuiPanelHeader__in {
+    height: 45px !important;
+}
+@media (min-width: 800px) {
+    .vkuiPanelHeader::before,
+    .vkuiPanelHeader .vkuiPanelHeader__in {
+        height: 104px !important;
+    }
+}
+
+.vkuiSimpleCell--ios {
+    padding: 0 !important;
+}
+
+div.main-block {
+    position: absolute;
+    top: 104px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+@media (max-width: 1400px) {
+    div.main-block {
+        position: absolute;
+        top: 70px;
+        padding: 20px 0 120px 0;
+    }
+}
+@media (max-width: 800px) {
+    div.main-block {
+        position: absolute;
+        top: 70px;
+    }
+}
+
+div.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vkuiTabbar, .vkuiTabbar--ios {
+    height: 93px !important;
+}
+@media (max-width: 800px) {
+    .vkuiTabbar, .vkuiTabbar--ios {
+        height: 77px !important;
+    }
+}
+
+.vkuiTabbar__in, .Tabbar__in {
+    height: 100%;
+    align-items: center;
+}
+
+.vkuiInput__el, .Input__el {
+    text-align: right !important;
+}
+.vkuiFormField__border, .FormField__border {
+    border: none !important;
+}
+
+.vkuiModalPage__in-wrap {
+    max-width: 510px !important;
+}
